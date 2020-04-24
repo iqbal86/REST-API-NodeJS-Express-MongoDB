@@ -1,0 +1,30 @@
+GET http://localhost:3000/subscribers
+
+###
+
+GET http://localhost:3000/subscribers/5ea364f6f0f0f00b8881174a
+
+###
+
+POST http://localhost:3000/subscribers
+Content-Type: application/json 
+
+{
+    "name": "James Brown",
+    "subscribedToChannel": "National Geographic"
+}
+
+###
+
+DELETE  http://localhost:3000/subscribers/5ea36500f0f0f00b8881174b
+
+
+
+###
+
+PATCH http://localhost:3000/subscribers/5ea364f6f0f0f00b8881174a
+Content-Type: application/json
+
+{
+    "name": " New Name"
+}
